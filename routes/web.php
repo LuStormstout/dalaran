@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\LecturesController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [\App\Http\Controllers\LecturesController::class, 'index'])
+Route::get('/', [LecturesController::class, 'index'])
     ->name('lectures.index')
     ->middleware('auth.basic'); // Basic authentication middleware
+
+Route::get('/lectures/interview-guide', [LecturesController::class, 'interviewGuide'])->name('lectures.interview-guide');

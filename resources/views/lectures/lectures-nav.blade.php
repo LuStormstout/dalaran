@@ -97,6 +97,8 @@
                 <a href="#laravel-basics" class="text-gray-600 hover:text-indigo-600 font-medium">Laravel 基础</a>
                 <a href="#online-mall"
                    class="text-gray-600 hover:text-indigo-600 font-medium">商城项目</a>
+                <a href="{{ route('lectures.interview-guide') }}"
+                   class="text-gray-600 hover:text-indigo-600 font-medium">面试资料</a>
             </nav>
         </div>
     </div>

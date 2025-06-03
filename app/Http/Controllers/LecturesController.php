@@ -22,4 +22,14 @@ class LecturesController extends Controller
     {
         return view('lectures.lectures-nav');
     }
+
+    /**
+     * Display the interview guide.
+     *
+     * @return View
+     */
+    public function interviewGuide(): View
+    {
+        return view('lectures.interview-guide');
+    }
 }
