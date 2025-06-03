@@ -14,6 +14,16 @@ use Illuminate\Contracts\View\View;
 class LecturesController extends Controller
 {
     /**
+     * LecturesController constructor.
+     *
+     * This controller requires basic authentication for all its methods.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth.basic'); // Basic authentication middleware
+    }
+
+    /**
      * Display the lectures navigation view.
      *
      * @return View|Application|Factory
